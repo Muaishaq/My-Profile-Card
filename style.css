@@ -1,0 +1,95 @@
+:root {
+  --bg-black-900: #f2f2fc;
+  --bg-black-100: #fdf9ff;
+  --bg-black-50: #e8dfec;
+  --text-black-900: #302e4d;
+  --text-black-700: #504e70;
+}
+
+body.dark {
+  --bg-black-900: #151515;
+  --bg-black-100: #222222;
+  --bg-black-50: #393939;
+  --text-black-900: #ffffff;
+  --text-black-700: #e9e9e9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: var(--bg-black-900);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.card {
+  background: var(--bg-black-100);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+  transition: background 0.3s ease;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  color: #ec1839;
+}
+
+.title {
+  color: var(--text-black-700);
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+
+.bio {
+  font-size: 14px;
+  color: var(--text-black-700);
+  margin: 1rem 0;
+}
+
+.socials a {
+  margin: 0 10px;
+  color: #ec1839;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: var(--bg-black-100);
+  background: #ec1839;
+  border-radius: 3px;
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 10px 20px;
+  border: none;
+  background: #ec1839;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background: #ec1839;
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.2);
+}
